@@ -1,16 +1,23 @@
 ﻿using Morpeh;
 using UnityEngine;
 using Unity.IL2CPP.CompilerServices;
-using Morpeh.Globals;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using Morpeh.Globals;
 
 [Il2CppSetOption(Option.NullChecks, false)]
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 [System.Serializable]
-public struct WeaponsComponents : IComponent 
+public struct WeaponsComponent : IComponent 
 {
-    public GlobalVariableInt coins;
+    public WeaponEnum weapon;
 
-    public Text coinText;
+    public Image imageSprite;
+
+    public Text priceText;
+
+    public List<WeaponData> weaponDataList;
+
+    public GlobalEventBool click;
 }

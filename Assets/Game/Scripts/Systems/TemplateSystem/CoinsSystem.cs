@@ -10,11 +10,11 @@ public sealed class CoinsSystem : UpdateSystem
 {
     private Filter _coinsFilter;
 
-    private СoinsComponent[] _coinsComponents;
+    private WeaponsComponents[] _coinsComponents;
 
     public override void OnAwake()
     {
-        _coinsFilter = World.Filter.With<СoinsComponent>();
+        _coinsFilter = World.Filter.With<WeaponsComponents>();
 
         _coinsComponents = GetCoinsTexts();
 
@@ -34,13 +34,13 @@ public sealed class CoinsSystem : UpdateSystem
             _coinsComponents[i].coinText.text = "Coins: " + _coinsComponents[i].coins.Value;
     }
 
-    private СoinsComponent[] GetCoinsTexts()
+    private WeaponsComponents[] GetCoinsTexts()
     {
-        СoinsComponent[] coinsComponents = new СoinsComponent[_coinsFilter.Length];
+        WeaponsComponents[] coinsComponents = new WeaponsComponents[_coinsFilter.Length];
 
         for (int i = 0; i < coinsComponents.Length; i++)
         {
-            ref var coins = ref _coinsFilter.GetEntity(i).GetComponent<СoinsComponent>();
+            ref var coins = ref _coinsFilter.GetEntity(i).GetComponent<WeaponsComponents>();
 
             coinsComponents[i] = coins;
         }
