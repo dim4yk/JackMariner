@@ -52,6 +52,7 @@ public sealed class WeaponsSystem : UpdateSystem
                     count = weaponsComponent.weaponDataList.Count - 1;
             }
 
+            weaponsComponent.weapon = weaponsComponent.weaponDataList[count].weaponType;
             weaponsComponent.imageSprite.sprite = weaponsComponent.weaponDataList[count].sprite;
             weaponsComponent.priceText.text = weaponsComponent.weaponDataList[count].price.ToString();
         }

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603c5f5e90148474d93563300a70ccc7, type: 3}
+  m_Name: Locations Global Variable
+  m_EditorClassIdentifier: 
+  internalEntityID: -1
+  value: 1
+  defaultSerializedValue: 0
+  customKey: e4cc5eeee24e4b1fae8c6eb99ae53aeb
+  AutoSave: 1

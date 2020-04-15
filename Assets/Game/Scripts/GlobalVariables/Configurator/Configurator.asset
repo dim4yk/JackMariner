@@ -21,4 +21,4 @@ MonoBehaviour:
     00000000:
       type: {class: GlobalVariableInt/IntWrapper, ns: Morpeh.Globals, asm: Morpeh}
       data:
-        value: 5
+        value: 7

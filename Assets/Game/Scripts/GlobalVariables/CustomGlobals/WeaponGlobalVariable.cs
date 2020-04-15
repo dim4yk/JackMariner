@@ -18,6 +18,7 @@ public sealed class WeaponGlobalVariable : BaseGlobalVariable<WeaponEnum>
     }
 
     protected override WeaponEnum Load(string serializedData) => (WeaponEnum) Enum.Parse(typeof(WeaponEnum), serializedData);
+
     protected override string Save() => this.value.ToString();
 
     [System.Serializable]
